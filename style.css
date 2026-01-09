@@ -1,0 +1,81 @@
+:root {
+  --background: #000814;
+  --btnColor: #001d3d;
+  --btnHover: #003566;
+  --taskColor: #ffc300;
+  --containerColor: #ffd60a;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #000814;
+  scroll-behavior: smooth;
+}
+.container {
+  padding: 20px 20px;
+  background-color: var(--containerColor);
+  width: auto;
+  height: auto;
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  min-width: 300px;
+}
+.head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 50px;
+}
+.head input {
+  border: none;
+  width: 80%;
+  margin-right: 6px;
+  padding: 8px;
+  border-radius: 8px;
+  transition: 0.4s;
+  border: 2px solid var(--btnColor);
+}
+.head input:focus {
+  outline: none;
+  border: 2px solid var(--taskColor);
+}
+.head button {
+  border: none;
+  padding: 8px 16px;
+  border-radius: 8px;
+  background-color: var(--btnColor);
+  color: white;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.task {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: var(--taskColor);
+  margin-top: 6px;
+  border-radius: 8px;
+  padding: 8px 16px;
+  border: 2px solid var(--btnColor);
+}
+.task button {
+  border: none;
+  padding: 8px 16px;
+  border-radius: 8px;
+  background-color: var(--btnColor);
+  color: white;
+  font-size: 14px;
+  font-weight: bold;
+}
+.task h2 {
+  margin: 0;
+  margin-right: 10px;
+}
